@@ -1,0 +1,22 @@
+app:
+    name: Ui
+    code: UI
+    notify: mpmathew@ecloudcontrol.com
+    
+build:
+    version: 1.4
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: ui-1.4exf
+
+deploy:
+    context: exf/DEV
+    replicas: 1
+    port:
+    - 4200
+  
+properties:
+    PREFECT_SERVER__APOLLO_URL: http://apollo-1-4exf-1-4:4200/graphql
+    UI_HOST_PORT: 8080
+    revision : 45
