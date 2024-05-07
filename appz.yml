@@ -19,4 +19,4 @@ deploy:
 properties:
     PREFECT_SERVER__APOLLO_URL: http://apollo-1-4exf-1-4:4200/graphql
     UI_HOST_PORT: 8080
-    revision : 47
+    revision : 48
